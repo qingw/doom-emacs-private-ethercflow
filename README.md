@@ -1,2 +1,2 @@
 # private/ethercflow
-My custom module for doom-emacs.
+My custom config for doom-emacs.
