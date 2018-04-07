@@ -39,5 +39,9 @@
            :sort-by :date
            :category-index nil))))
 
+(def-package! fcitx
+    :init
+    (fcitx-evil-turn-on))
+
 (provide 'config)
 ;;; config.el ends here
