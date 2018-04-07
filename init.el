@@ -1,5 +1,8 @@
 ;;; init.example.el -*- lexical-binding: t; -*-
 
+(setq user-mail-address "ethercflow@gmail.com"
+      user-full-name    "Zwb")
+
 (doom! :feature
        (popup            ; tame sudden yet inevitable temporary windows
         +all             ; catch all popups that start with an asterix
