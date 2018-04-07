@@ -1,7 +1,7 @@
 ;;; packages.el --- description -*- lexical-binding: t; -*-
 
 (package! org-page)
-(package! fcitx :toggle chinese-enable-fcitx)
+(package! fcitx)
 
 (provide 'packages)
 ;;; packages.el ends here
