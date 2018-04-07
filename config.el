@@ -41,8 +41,9 @@
            :category-index nil))))
 
 (def-package! fcitx
-    :init
-    (fcitx-evil-turn-on))
+  :after evil
+  :config
+  (fcitx-evil-turn-on))
 
 ;; lang/c
 (defun c-lineup-arglist-tabs-only (ignored)
