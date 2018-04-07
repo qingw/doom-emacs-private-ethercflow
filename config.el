@@ -9,6 +9,7 @@
         op/site-main-title "Zwb's Up"
         op/site-sub-title "=============> 这里没有上帝，只有属于我们自己的信条。"
         op/personal-github-link "https://github.com/ethercflow"
+        op/confound-email nil
         op/category-config-alist
         '(("blog" ;; this is the default configuration
            :show-meta t
