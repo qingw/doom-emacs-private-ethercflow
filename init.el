@@ -119,9 +119,3 @@
        ;; and additional ex commands for evil-mode. Use it as a reference for
        ;; your own modules.
        (default +bindings +snippets +evil-commands))
-
-;; * Mac-specific
-(setq mac-command-modifier 'super
-      mac-option-modifier 'meta
-      mac-pass-command-to-system nil)
-(mac-auto-operator-composition-mode 1)
