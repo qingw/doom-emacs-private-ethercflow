@@ -1,8 +1,5 @@
 ;;; init.el -*- lexical-binding: t; -*-
 
-(setq user-mail-address "ethercflow@gmail.com"
-      user-full-name    "Zwb")
-
 (doom! :feature
        (popup            ; tame sudden yet inevitable temporary windows
         +all             ; catch all popups that start with an asterix
@@ -118,6 +115,9 @@
       ;(write            ; emacs as a word processor (latex + org + markdown)
       ; +wordnut         ; wordnet (wn) search
       ; +langtool)       ; a proofreader (grammar/style check) for Emacs
+
+       :private
+       ethercflow
 
        :config
        ;; The default module set reasonable defaults for Emacs. It also provides
