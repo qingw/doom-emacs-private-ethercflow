@@ -50,7 +50,6 @@
        make              ; run make tasks from Emacs
        magit             ;
        neotree           ; a project drawer, like NERDTree for vim
-       org-page          ; a blog generator
        password-store    ; password manager for nerds
        pdf               ; pdf enhancements
       ;rgb               ; creating color strings
@@ -118,6 +117,9 @@
 
        :private
        ethercflow
+
+       :tools
+       org-page
 
        :config
        ;; The default module set reasonable defaults for Emacs. It also provides
