@@ -1,4 +1,4 @@
-;;; tools/fcitx/config.el --- description -*- lexical-binding: t; -*-
+;;; tools/fcitx/config.el --- intl -*- lexical-binding: t; -*-
 
 (def-package! fcitx
   :after evil
