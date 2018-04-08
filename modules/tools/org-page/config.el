@@ -1,6 +1,7 @@
 ;;; tools/org-page/config.el --- blog -*- lexical-binding: t; -*-
 
 (def-package! org-page
+  :when (featurep! :lang org)
   :config
   (setq op/repository-directory "~/Documents/Blog"
         op/site-domain "https://ethercflow.github.io"
