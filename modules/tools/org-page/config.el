@@ -1,4 +1,4 @@
-;;; tools/org-page/config.el -*- lexical-binding: t; -*-
+;;; tools/org-page/config.el --- blog -*- lexical-binding: t; -*-
 
 (def-package! org-page
   :config
