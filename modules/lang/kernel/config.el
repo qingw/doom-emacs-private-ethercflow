@@ -1,4 +1,4 @@
-;;; lang/cc/config.el --- linux kernel c -*- lexical-binding: t; -*-
+;;; lang/kernel/config.el --- linux kernel c -*- lexical-binding: t; -*-
 
 (defun c-lineup-arglist-tabs-only (ignored)
   "Line up argument lists by tabs, not spaces"
@@ -31,4 +31,4 @@
                 (c-set-style "linux-tabs-only")))))
 
 (provide 'config)
-;;; lang/cc/config.el ends here
+;;; lang/kernel/config.el ends here

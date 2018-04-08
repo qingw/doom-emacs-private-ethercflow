@@ -45,6 +45,7 @@
        dired             ; making dired pretty [functional]
        electric-indent   ; smarter, keyword-based electric-indent
        eshell            ; a consistent, cross-platform shell (WIP)
+       fcitx             ; a intl
        gist              ; interacting with github gists
        imenu             ; an imenu sidebar and searchable code index
        impatient-mode    ; show off code over HTTP
@@ -52,6 +53,7 @@
        make              ; run make tasks from Emacs
        magit             ;
        neotree           ; a project drawer, like NERDTree for vim
+       org-page          ; a blog generator
        password-store    ; password manager for nerds
        pdf               ; pdf enhancements
       ;rgb               ; creating color strings
@@ -72,6 +74,7 @@
        emacs-lisp        ; drown in parentheses
       ;ess               ; emacs speaks statistics
        go                ; the hipster dialect
+       kernel            ; linux kernel c style
       ;(haskell +intero) ; a language that's lazier than I am
       ;hy                ; readability of scheme w/ speed of python
       ;(java +meghanada) ; the poster child for carpal tunnel syndrome
