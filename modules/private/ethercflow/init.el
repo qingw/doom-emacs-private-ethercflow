@@ -9,3 +9,5 @@
       doom-big-font (font-spec :family "Inconsolata" :size 17)
       doom-unicode-font (font-spec :family "Inconsolata" :size 17)
       doom-variable-pitch-font (font-spec :family "Inconsolata" :size 17))
+
+(add-hook 'before-save-hook 'whitespace-cleanup)
