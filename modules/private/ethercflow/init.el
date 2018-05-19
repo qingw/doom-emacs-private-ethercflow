@@ -11,5 +11,6 @@
       doom-variable-pitch-font (font-spec :family "Inconsolata" :size 17))
 
 (setq doom-line-numbers-style 'relative)
+(toggle-frame-fullscreen)
 
 (add-hook 'before-save-hook 'whitespace-cleanup)
