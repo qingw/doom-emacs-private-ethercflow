@@ -119,7 +119,7 @@
 
        :tools
        org-page          ; a blog generator
-       fonts             ; chinese-fonts-setup
+       ;fonts            ; chinese-fonts-setup
 
        :config
        ;; The default module set reasonable defaults for Emacs. It also provides
