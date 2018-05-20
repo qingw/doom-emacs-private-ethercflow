@@ -4,7 +4,7 @@
 (def-package! pyenv-mode
   :when (featurep! :lang python)
   :config
-  (setenv "WORKON_HOME" "~/anaconda/envs")
+  (setenv "WORKON_HOME" "~/miniconda3/envs")
   (pyenv-mode 1)
 
   (defun projectile-pyenv-mode-set ()
