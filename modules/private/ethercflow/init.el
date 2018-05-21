@@ -30,6 +30,8 @@
 (if window-system
     (s-font))
 
+(define-coding-system-alias 'UTF-8 'utf-8)
+
 (setq doom-line-numbers-style 'relative)
 (toggle-frame-fullscreen)
 
