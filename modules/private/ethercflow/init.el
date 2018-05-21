@@ -32,6 +32,9 @@
 
 (define-coding-system-alias 'UTF-8 'utf-8)
 
+(setq +org-dir (expand-file-name "~/Documents/org/")
+      org-ellipsis " ▼ ")
+
 (setq doom-line-numbers-style 'relative)
 (toggle-frame-fullscreen)
 
