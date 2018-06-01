@@ -133,6 +133,9 @@
        org-page          ; a blog generator
        ;fonts            ; chinese-fonts-setup
 
+       :tags
+       cscope
+
        :config
        ;; The default module set reasonable defaults for Emacs. It also provides
        ;; a Spacemacs-inspired keybinding scheme, a custom yasnippet library,
