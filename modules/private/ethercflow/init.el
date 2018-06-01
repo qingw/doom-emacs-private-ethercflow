@@ -39,3 +39,5 @@
 (toggle-frame-fullscreen)
 
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+(setq rtags-display-result-backend 'ivy)
