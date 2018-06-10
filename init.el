@@ -132,6 +132,7 @@
 
        :tools
        cmake             ; cmake-ide
+       fasd              ; fast find file
        org-page          ; a blog generator
        ;fonts            ; chinese-fonts-setup
 
