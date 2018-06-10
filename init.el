@@ -18,12 +18,12 @@
 
        :completion
        (company          ; the ultimate code completion backend
-        +auto            ; as-you-type code completion
-        +childframe)     ; a nicer company UI (Emacs 26+ only)
-      ;helm              ; the *other* search engine for love and life
+        +auto)           ; as-you-type code completion
+      ;(helm             ; the *other* search engine for love and life
+      ; +fuzzy)          ; enable fuzzy search backend for helm
       ;ido               ; the other *other* search engine...
        (ivy              ; a search engine for love and life
-        +childframe)     ; uses childframes for popups (Emacs 26+ only)
+        +fuzzy)          ; enable fuzzy search backend for ivy
 
        :ui
        doom              ; what makes DOOM look the way it does
@@ -67,7 +67,8 @@
 
        :lang
        assembly          ; assembly for fun or debugging
-       cc                ; C/C++/Obj-C madness
+       (cc               ; C/C++/Obj-C madness
+        +irony)
       ;crystal           ; ruby at the speed of c
       ;clojure           ; java with a lisp
       ;csharp            ; unity, .NET, and mono shenanigans
@@ -130,6 +131,7 @@
        impatient-mode    ; show off code over HTTP
 
        :tools
+       cmake             ; cmake-ide
        org-page          ; a blog generator
        ;fonts            ; chinese-fonts-setup
 
