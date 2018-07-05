@@ -2,3 +2,4 @@
 ;;; lang/ppython/packages.el
 
 (package! pyenv-mode)
+(package! py-autopep8)

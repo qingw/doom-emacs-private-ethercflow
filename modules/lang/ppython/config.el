@@ -16,3 +16,9 @@
 
   (add-hook 'projectile-after-switch-project-hook
             'projectile-pyenv-mode-set))
+
+
+(def-package! py-autopep8
+  :when (featurep! :lang python)
+  :config
+  (add-hook 'python-mode-hook 'py-autopep8-enable-on-save))
