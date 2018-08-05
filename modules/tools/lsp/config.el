@@ -19,4 +19,9 @@
    lsp-ui-peek-expand-function (lambda (xs) (mapcar #'car xs))))
 
 (def-package! company-lsp
-  :after lsp-mode)
+  :after lsp-mode
+  :init
+  (setq company-quickhelp-delay 0
+        company-transformers nil
+        company-lsp-async t
+        company-lsp-cache-candidates nil))

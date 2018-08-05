@@ -5,13 +5,14 @@
   :config
   (setq ccls-executable "/usr/local/bin/ccls"
         ccls-cache-dir (concat doom-cache-dir ".ccls_cached_index"))
-  (setq ccls-extra-init-params
-        '(:completion (:detailedLabel t)
-                      :diagnostics (:frequencyMs 5000)
-                      :index (:initialReparseForDependency :json-false)))
+
+  (setq ccls-extra-init-params '(
+          :completion (:detailedLabel t)
+          :diagnostics (:frequencyMs 5000)
+          :index (:reparseForDependency 1)))
 
   (with-eval-after-load 'projectile
     (add-to-list 'projectile-globally-ignored-directories ".ccls-cache"))
 
   (evil-set-initial-state 'ccls-tree-mode 'emacs)
-  (set! :company-backend '(c-mode c++-mode) 'company-lsp))
+  (set-company-backend! 'c-mode-common 'company-lsp))
