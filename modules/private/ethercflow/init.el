@@ -35,6 +35,8 @@
 (setq +org-dir (expand-file-name "~/Documents/org/")
       org-ellipsis " ▼ ")
 
+(setq dired-use-ls-dired nil)
+
 (setq doom-line-numbers-style 'relative)
 (toggle-frame-fullscreen)
 
