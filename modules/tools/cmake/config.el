@@ -3,7 +3,8 @@
 
 (def-package! cmake-ide
   :commands (cmake-ide-delete-file cide--mode-hook)
-  :init
+  :when (featurep! :lang cc)
+  :config
   (progn
     (dolist (hook '(c-mode-hook c++-mode-hook))
       ;; append the `cide--mode-hook' in order to load it last
