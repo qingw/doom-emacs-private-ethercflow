@@ -34,7 +34,7 @@
        hl-todo           ; highlight TODO/FIXME/NOTE tags
       ;modeline          ; snazzy, Atom-inspired modeline, plus API
        nav-flash         ; blink the current line after jumping
-       neotree           ; a project drawer, like NERDTree for vim
+      ;neotree           ; a project drawer, like NERDTree for vim
        treemacs          ; a project drawer, like neotree but cooler
        (popup            ; tame sudden yet inevitable temporary windows
         +all             ; catch all popups that start with an asterix
@@ -47,6 +47,7 @@
        window-select     ; visually switch windows
 
        :editor
+       multiple-cursors  ; editing in many places at once
       ;parinfer          ; turn lisp into python, sort of
        rotate-text       ; cycle region at point between text candidates
 
