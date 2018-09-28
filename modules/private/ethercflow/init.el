@@ -37,8 +37,7 @@
 
 (setq dired-use-ls-dired nil)
 
-(setq doom-line-numbers-style 'relative)
-(toggle-frame-fullscreen)
+(scroll-bar-mode -1)
 
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
