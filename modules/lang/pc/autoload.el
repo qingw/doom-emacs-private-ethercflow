@@ -1,16 +1,33 @@
 ;;; lang/pc/autoload.el -*- lexical-binding: t; -*-
 
 ;;;###autoload
+(defvar +ccls-path-mappings [])
+
+;;;###autoload
+(defvar +ccls-initial-blacklist [])
+
+;;;###autoload
 (defun +ccls//enable ()
   (require 'ccls)
+  (setq-local lsp-ui-sideline-show-symbol nil)
   (condition-case nil
       (lsp-ccls-enable)
     (user-error nil)))
 
-(defun ccls/base () (interactive) (lsp-ui-peek-find-custom 'base "$ccls/base"))
-(defun ccls/callers () (interactive) (lsp-ui-peek-find-custom 'callers "$ccls/callers"))
-(defun ccls/vars (kind) (lsp-ui-peek-find-custom 'vars "$ccls/vars" (plist-put (lsp--text-document-position-params) :kind kind)))
-(defun ccls/random () (interactive) (lsp-ui-peek-find-custom 'random "$ccls/random"))
+(defun ccls/callee ()
+  (interactive)
+  (lsp-ui-peek-find-custom 'callee "$ccls/call" '(:callee t)))
+(defun ccls/caller ()
+  (interactive)
+  (lsp-ui-peek-find-custom 'caller "$ccls/call"))
+(defun ccls/vars (kind)
+  (lsp-ui-peek-find-custom 'vars "$ccls/vars" `(:kind ,kind)))
+(defun ccls/base (levels)
+  (lsp-ui-peek-find-custom 'base "$ccls/inheritance" `(:levels ,levels)))
+(defun ccls/derived (levels)
+  (lsp-ui-peek-find-custom 'derived "$ccls/inheritance" `(:levels ,levels :derived t)))
+(defun ccls/member (kind)
+  (lsp-ui-peek-find-custom 'member "$ccls/member" `(:kind ,kind)))
 
 ;; The meaning of :role corresponds to https://github.com/maskray/ccls/blob/master/src/symbol.h
 

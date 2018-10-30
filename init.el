@@ -71,7 +71,7 @@
        ;;fonts           ; chinese-fonts-setup
        ;;ein             ; tame Jupyter notebooks with emacs
        gist              ; interacting with github gists
-       ;;lsp
+       lsp
        macos             ; MacOS-specific commands
        ;;make            ; run make tasks from Emacs
        magit             ; a git porcelain for Emacs
@@ -85,9 +85,9 @@
        ;;wakatime
 
        :lang
-       ;;assembly        ; assembly for fun or debugging
-       ;;cc              ; C/C++/Obj-C madness
-       ;;pc              ; personal C/C++ setting
+       assembly          ; assembly for fun or debugging
+       cc                ; C/C++/Obj-C madness
+       pc                ; personal C/C++ setting
        ;;clojure         ; java with a lisp
        ;;common-lisp     ; if you've seen one lisp, you've seen them all
        ;;coq             ; proofs-as-programs
