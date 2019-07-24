@@ -11,3 +11,5 @@
  ;; If there is more than one, they won't work right.
  '(lsp-ui-doc-background ((t (:background "gray18"))))
  '(lsp-ui-doc-header ((t (:background "dim gray" :foreground "white")))))
+
+(setq rustic-lsp-server 'rust-analyzer)

@@ -19,12 +19,12 @@
                          c-lineup-gcc-asm-reg
                          c-lineup-arglist-tabs-only))))))
 
-(add-hook 'c-mode-hook
-          (lambda ()
-            (let ((filename (buffer-file-name)))
-                (setq indent-tabs-mode t)
-                (setq show-trailing-whitespace t)
-                (c-set-style "linux-tabs-only"))))
+;;(add-hook 'c-mode-hook
+;;          (lambda ()
+;;            (let ((filename (buffer-file-name)))
+;;                (setq indent-tabs-mode t)
+;;                (setq show-trailing-whitespace t)
+;;                (c-set-style "linux-tabs-only"))))
 
 (provide 'config)
 ;;; lang/kernel/config.el ends here

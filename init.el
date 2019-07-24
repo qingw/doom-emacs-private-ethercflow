@@ -3,13 +3,6 @@
 
 (doom! :feature
        ;;debugger          ; FIXME stepping through code, to help you add bugs
-       eval              ; run code, run (also, repls)
-       (evil +everywhere); come to the dark side, we have cookies
-       file-templates    ; auto-snippets for empty files
-       (lookup           ; helps you navigate your code and documentation
-        +docsets)        ; ...or in Dash docsets locally
-       snippets          ; my elves. They type so I don't have to
-       workspaces        ; tab emulation, persistence & separate workspaces
 
        :completion
        company           ; the ultimate code completion backend
@@ -18,11 +11,12 @@
        ivy              ; a search engine for love and life
 
        :ui
+       workspaces        ; tab emulation, persistence & separate workspaces
+       ophints           ; display visual hints when editing in evil
        ;;deft              ; notational velocity for Emacs
        doom              ; what makes DOOM look the way it does
        doom-dashboard    ; a nifty splash screen for Emacs
        doom-quit         ; DOOM quit-message prompts when you quit Emacs
-       evil-goggles      ; display visual hints when editing in evil
        ;;fci               ; a `fill-column' indicator
        hl-todo           ; highlight TODO/FIXME/NOTE tags
        ;;indent-guides     ; highlighted indent columns
@@ -41,6 +35,9 @@
        window-select     ; visually switch windows
 
        :editor
+       (evil +everywhere); come to the dark side, we have cookies
+       file-templates    ; auto-snippets for empty files
+       snippets          ; my elves. They type so I don't have to
        fold              ; (nigh) universal code folding
        ;;(format +onsave)  ; automated prettiness
        ;;lispy             ; vim for lisp, for people who dont like vim
@@ -55,11 +52,16 @@
         )
        electric          ; smarter, keyword-based electric-indent
        ;;eshell            ; a consistent, cross-platform shell (WIP)
-       imenu             ; an imenu sidebar and searchable code index
-       term              ; terminals in Emacs
+       ;;imenu             ; an imenu sidebar and searchable code index
        vc                ; version-control and Emacs, sitting in a tree
 
+       :term
+        term             ; terminals in Emacs
+
        :tools
+       eval              ; run code, run (also, repls)
+       (lookup           ; helps you navigate your code and documentation
+        +docsets)        ; ...or in Dash docsets locally
        ;;ansible
        ;;docker
        ;;editorconfig      ; let someone else argue about tabs vs spaces
@@ -97,7 +99,7 @@
        emacs-lisp        ; drown in parentheses
        ;;kernel
        ;;ess               ; emacs speaks statistics
-       go                ; the hipster dialect
+       (go +lsp)           ; the hipster dialect
        ;;(haskell +intero) ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ;
@@ -122,11 +124,12 @@
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
        python            ; beautiful is better than ugly
+       ppython
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;rest              ; Emacs as a REST client
        ;;ruby              ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-       rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
+       (rust +lsp)         ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        (sh +fish)        ; she sells (ba|z|fi)sh shells on the C xor
        ;;solidity          ; do you need a blockchain? No.
